@@ -6,7 +6,7 @@ import { useAutocomplete } from '@mui/base/useAutocomplete';
 import { styled } from '@mui/system';
 
 import { ReactComponent as SearchIcon } from '../../assets/Search icon.svg';
-import { truncate } from '../../helpers/helpers';
+// import { truncate } from '../../helpers/helpers';
 import styles from './Search.module.css';
 
 const Listbox = styled("ul")(({ theme }) => ({
@@ -101,9 +101,9 @@ function Search({ searchData, placeholder }) {
                 <div>
                   <p className={styles.albumTitle}>{option.title}</p>
 
-                  <p className={styles.albumArtists}>
+                  {/* <p className={styles.albumArtists}>
                     {truncate(artists.join(", "), 40)}
-                  </p>
+                  </p> */}
                 </div>
               </li>
             );
