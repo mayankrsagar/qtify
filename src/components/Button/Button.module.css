@@ -1,0 +1,22 @@
+:root {
+    --button-bg-color: black;
+    --button-text-color: green;
+  }
+  
+  .button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 12px; /* Rounded corners */
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: var(--button-text-color);
+    color: var(--button-bg-color);
+  }
+  
