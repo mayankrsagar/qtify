@@ -1,0 +1,439 @@
+{
+  "browserName": "electron",
+  "browserPath": "",
+  "browserVersion": "118.0.5993.159",
+  "config": {
+    "projectRoot": "C:\\Users\\mayan\\OneDrive\\Desktop\\projects\\qtify\\assessment",
+    "projectName": "assessment",
+    "configFile": "cypress.config.js",
+    "isTextTerminal": true,
+    "animationDistanceThreshold": 5,
+    "arch": "x64",
+    "baseUrl": null,
+    "blockHosts": null,
+    "chromeWebSecurity": true,
+    "clientCertificates": [],
+    "defaultBrowser": null,
+    "defaultCommandTimeout": 4000,
+    "downloadsFolder": "C:\\Users\\mayan\\OneDrive\\Desktop\\projects\\qtify\\assessment\\cypress\\downloads",
+    "env": {},
+    "execTimeout": 60000,
+    "experimentalCspAllowList": false,
+    "experimentalFetchPolyfill": false,
+    "experimentalInteractiveRunEvents": false,
+    "experimentalRunAllSpecs": false,
+    "experimentalMemoryManagement": false,
+    "experimentalModifyObstructiveThirdPartyCode": false,
+    "experimentalSkipDomainInjection": null,
+    "experimentalJustInTimeCompile": false,
+    "experimentalOriginDependencies": false,
+    "experimentalSourceRewriting": false,
+    "experimentalSingleTabRunMode": false,
+    "experimentalStudio": false,
+    "experimentalWebKitSupport": false,
+    "fileServerFolder": "C:\\Users\\mayan\\OneDrive\\Desktop\\projects\\qtify\\assessment",
+    "fixturesFolder": "C:\\Users\\mayan\\OneDrive\\Desktop\\projects\\qtify\\assessment\\cypress\\fixtures",
+    "excludeSpecPattern": "*.hot-update.js",
+    "includeShadowDom": false,
+    "keystrokeDelay": 0,
+    "modifyObstructiveCode": true,
+    "numTestsKeptInMemory": 0,
+    "platform": "win32",
+    "pageLoadTimeout": 60000,
+    "port": 50834,
+    "projectId": null,
+    "redirectionLimit": 20,
+    "reporter": "spec",
+    "reporterOptions": null,
+    "requestTimeout": 5000,
+    "resolvedNodePath": "C:\\Program Files\\nodejs\\node.exe",
+    "resolvedNodeVersion": "22.11.0",
+    "responseTimeout": 30000,
+    "retries": {
+      "runMode": 0,
+      "openMode": 0
+    },
+    "screenshotOnRunFailure": true,
+    "screenshotsFolder": "C:\\Users\\mayan\\OneDrive\\Desktop\\projects\\qtify\\assessment\\cypress\\screenshots",
+    "slowTestThreshold": 10000,
+    "scrollBehavior": "top",
+    "supportFile": "C:\\Users\\mayan\\OneDrive\\Desktop\\projects\\qtify\\assessment\\cypress\\support\\e2e.js",
+    "taskTimeout": 60000,
+    "testIsolation": true,
+    "trashAssetsBeforeRuns": true,
+    "userAgent": null,
+    "video": false,
+    "videoCompression": false,
+    "videosFolder": "C:\\Users\\mayan\\OneDrive\\Desktop\\projects\\qtify\\assessment\\cypress\\videos",
+    "viewportHeight": 660,
+    "viewportWidth": 1000,
+    "waitForAnimations": true,
+    "watchForFileChanges": false,
+    "specPattern": "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
+    "browsers": [
+      {
+        "channel": "stable",
+        "displayName": "Edge",
+        "family": "chromium",
+        "majorVersion": "131",
+        "name": "edge",
+        "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "version": "131.0.2903.51"
+      },
+      {
+        "channel": "stable",
+        "displayName": "Electron",
+        "family": "chromium",
+        "majorVersion": 118,
+        "name": "electron",
+        "path": "",
+        "version": "118.0.5993.159"
+      }
+    ],
+    "cypressBinaryRoot": "C:\\Users\\mayan\\AppData\\Local\\Cypress\\Cache\\13.16.0\\Cypress\\resources\\app",
+    "hosts": null,
+    "isInteractive": true,
+    "version": "13.16.0",
+    "testingType": "e2e",
+    "browser": null,
+    "cypressInternalEnv": "production"
+  },
+  "cypressVersion": "13.16.0",
+  "endedTestsAt": "2024-11-22T10:49:39.058Z",
+  "osName": "win32",
+  "osVersion": "10.0.22631",
+  "runs": [
+    {
+      "error": null,
+      "reporter": "spec",
+      "reporterStats": {
+        "suites": 7,
+        "tests": 14,
+        "passes": 3,
+        "pending": 0,
+        "failures": 11,
+        "start": "2024-11-22T10:48:51.661Z",
+        "end": "2024-11-22T10:49:39.057Z",
+        "duration": 47396
+      },
+      "screenshots": [
+        {
+          "height": 720,
+          "name": null,
+          "path": "C:\\Users\\mayan\\OneDrive\\Desktop\\projects\\qtify\\assessment\\cypress\\screenshots\\spec.cy.js\\Buildout Qtify v2 -- Navbar -- should check if the button has a variant of black background (failed).png",
+          "takenAt": "2024-11-22T10:48:55.048Z",
+          "width": 1280
+        },
+        {
+          "height": 720,
+          "name": null,
+          "path": "C:\\Users\\mayan\\OneDrive\\Desktop\\projects\\qtify\\assessment\\cypress\\screenshots\\spec.cy.js\\Buildout Qtify v2 -- Navbar -- should check if the button's text color is a variant of green (failed).png",
+          "takenAt": "2024-11-22T10:48:55.490Z",
+          "width": 1280
+        },
+        {
+          "height": 720,
+          "name": null,
+          "path": "C:\\Users\\mayan\\OneDrive\\Desktop\\projects\\qtify\\assessment\\cypress\\screenshots\\spec.cy.js\\Buildout Qtify v2 -- Navbar -- should check if the button has some border-radius (failed).png",
+          "takenAt": "2024-11-22T10:48:59.906Z",
+          "width": 1280
+        },
+        {
+          "height": 720,
+          "name": null,
+          "path": "C:\\Users\\mayan\\OneDrive\\Desktop\\projects\\qtify\\assessment\\cypress\\screenshots\\spec.cy.js\\Buildout Qtify v2 -- Navbar -- should check if hovering on the button changes the cursor to a pointer (failed).png",
+          "takenAt": "2024-11-22T10:49:04.230Z",
+          "width": 1280
+        },
+        {
+          "height": 720,
+          "name": null,
+          "path": "C:\\Users\\mayan\\OneDrive\\Desktop\\projects\\qtify\\assessment\\cypress\\screenshots\\spec.cy.js\\Buildout Qtify v2 -- Navbar -- should check if the button is styled with 'Poppins' font (failed).png",
+          "takenAt": "2024-11-22T10:49:08.549Z",
+          "width": 1280
+        },
+        {
+          "height": 720,
+          "name": null,
+          "path": "C:\\Users\\mayan\\OneDrive\\Desktop\\projects\\qtify\\assessment\\cypress\\screenshots\\spec.cy.js\\Buildout Qtify v2 -- Hero Section Tests -- should find the parent element with 100 Thousand Songs, ad-free text (case-insensitive) and an image (failed).png",
+          "takenAt": "2024-11-22T10:49:12.840Z",
+          "width": 1280
+        },
+        {
+          "height": 720,
+          "name": null,
+          "path": "C:\\Users\\mayan\\OneDrive\\Desktop\\projects\\qtify\\assessment\\cypress\\screenshots\\spec.cy.js\\Buildout Qtify v2 -- Hero Section Tests -- should check the background color of the parent element (failed).png",
+          "takenAt": "2024-11-22T10:49:17.139Z",
+          "width": 1280
+        },
+        {
+          "height": 720,
+          "name": null,
+          "path": "C:\\Users\\mayan\\OneDrive\\Desktop\\projects\\qtify\\assessment\\cypress\\screenshots\\spec.cy.js\\Buildout Qtify v2 -- Cards Tests -- should match the count of top, and new album cards with their respective API responses (failed).png",
+          "takenAt": "2024-11-22T10:49:22.559Z",
+          "width": 1280
+        },
+        {
+          "height": 720,
+          "name": null,
+          "path": "C:\\Users\\mayan\\OneDrive\\Desktop\\projects\\qtify\\assessment\\cypress\\screenshots\\spec.cy.js\\Buildout Qtify v2 -- Albums Section tests -- should show cards for Top and New Albums and verify the 'Show All' functionality (failed).png",
+          "takenAt": "2024-11-22T10:49:27.055Z",
+          "width": 1280
+        },
+        {
+          "height": 720,
+          "name": null,
+          "path": "C:\\Users\\mayan\\OneDrive\\Desktop\\projects\\qtify\\assessment\\cypress\\screenshots\\spec.cy.js\\Buildout Qtify v2 -- Slider functionality tests -- should verify if the first two albums are not visible after clicking the slider's next button 4 times (failed).png",
+          "takenAt": "2024-11-22T10:49:32.569Z",
+          "width": 1280
+        },
+        {
+          "height": 720,
+          "name": null,
+          "path": "C:\\Users\\mayan\\OneDrive\\Desktop\\projects\\qtify\\assessment\\cypress\\screenshots\\spec.cy.js\\Buildout Qtify v2 -- Songs test -- should match the count of song cards with their respective API responses (failed).png",
+          "takenAt": "2024-11-22T10:49:38.783Z",
+          "width": 1280
+        }
+      ],
+      "spec": {
+        "absolute": "C:/Users/mayan/OneDrive/Desktop/projects/qtify/assessment/cypress/e2e/spec.cy.js",
+        "fileExtension": ".js",
+        "fileName": "spec",
+        "name": "spec.cy.js",
+        "relative": "cypress\\e2e\\spec.cy.js"
+      },
+      "stats": {
+        "duration": 47397,
+        "endedAt": "2024-11-22T10:49:39.058Z",
+        "failures": 11,
+        "passes": 3,
+        "pending": 0,
+        "skipped": 0,
+        "startedAt": "2024-11-22T10:48:51.661Z",
+        "suites": 7,
+        "tests": 14
+      },
+      "tests": [
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 706,
+          "state": "passed",
+          "title": [
+            "Buildout Qtify v2",
+            "Navbar",
+            "Should contain logo, search bar, and a button"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 151,
+          "state": "passed",
+          "title": [
+            "Buildout Qtify v2",
+            "Navbar",
+            "should check if the logo is vertically centered and has space to its left"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 129,
+          "state": "passed",
+          "title": [
+            "Buildout Qtify v2",
+            "Navbar",
+            "should check the search bar inside Navbar should contain the placeholder keyword 'search' inside it"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "failed"
+            }
+          ],
+          "displayError": "AssertionError: expected 240 to be below 50\n    at Context.eval (webpack://qtify/./cypress/e2e/spec.cy.js:75:28)",
+          "duration": 393,
+          "state": "failed",
+          "title": [
+            "Buildout Qtify v2",
+            "Navbar",
+            "should check if the button has a variant of black background"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "failed"
+            }
+          ],
+          "displayError": "AssertionError: expected 0 to be above 0\n    at Context.eval (webpack://qtify/./cypress/e2e/spec.cy.js:97:30)",
+          "duration": 428,
+          "state": "failed",
+          "title": [
+            "Buildout Qtify v2",
+            "Navbar",
+            "should check if the button's text color is a variant of green"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "failed"
+            }
+          ],
+          "displayError": "AssertionError: Timed out retrying after 4000ms: expected '0px' to not equal '0px'\n    at Context.eval (webpack://qtify/./cypress/e2e/spec.cy.js:110:9)",
+          "duration": 4273,
+          "state": "failed",
+          "title": [
+            "Buildout Qtify v2",
+            "Navbar",
+            "should check if the button has some border-radius"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "failed"
+            }
+          ],
+          "displayError": "AssertionError: Timed out retrying after 4000ms: expected 'default' to equal 'pointer'\n    at Context.eval (webpack://qtify/./cypress/e2e/spec.cy.js:121:9)",
+          "duration": 4310,
+          "state": "failed",
+          "title": [
+            "Buildout Qtify v2",
+            "Navbar",
+            "should check if hovering on the button changes the cursor to a pointer"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "failed"
+            }
+          ],
+          "displayError": "AssertionError: Timed out retrying after 4000ms: expected 'Arial' to include 'Poppins'\n    at Context.eval (webpack://qtify/./cypress/e2e/spec.cy.js:132:9)",
+          "duration": 4262,
+          "state": "failed",
+          "title": [
+            "Buildout Qtify v2",
+            "Navbar",
+            "should check if the button is styled with 'Poppins' font"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "failed"
+            }
+          ],
+          "displayError": "AssertionError: Timed out retrying after 4000ms: Expected to find content: '/100 Thousand Songs, ad-free/i' but never did.\n    at Context.eval (webpack://qtify/./cypress/e2e/spec.cy.js:138:11)",
+          "duration": 4265,
+          "state": "failed",
+          "title": [
+            "Buildout Qtify v2",
+            "Hero Section Tests",
+            "should find the parent element with \"100 Thousand Songs, ad-free\" text (case-insensitive) and an image"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "failed"
+            }
+          ],
+          "displayError": "AssertionError: Timed out retrying after 4000ms: Expected to find content: '/100 Thousand Songs, ad-free/i' but never did.\n    at Context.eval (webpack://qtify/./cypress/e2e/spec.cy.js:154:11)",
+          "duration": 4255,
+          "state": "failed",
+          "title": [
+            "Buildout Qtify v2",
+            "Hero Section Tests",
+            "should check the background color of the parent element"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "failed"
+            }
+          ],
+          "displayError": "CypressError: Timed out retrying after 5000ms: `cy.wait()` timed out waiting `5000ms` for the 1st request to the route: `getTopAlbums`. No request ever occurred.\n\nhttps://on.cypress.io/wait\n    at cypressErr (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:75921:18)\n    at Object.errByPath (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:75975:10)\n    at checkForXhr (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:135212:84)\n    at <unknown> (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:135238:28)\n    at tryCatcher (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:1830:23)\n    at Promise.attempt.Promise.try (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:4338:29)\n    at whenStable (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:143614:68)\n    at <unknown> (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:143555:14)\n    at tryCatcher (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:1830:23)\n    at Promise._settlePromiseFromHandler (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:1542:31)\n    at Promise._settlePromise (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:1599:18)\n    at Promise._settlePromise0 (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:1644:10)\n    at Promise._settlePromises (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:1724:18)\n    at Promise._fulfill (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:1668:18)\n    at <unknown> (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:5473:46)\nFrom Your Spec Code:\n    at Context.eval (webpack://qtify/./cypress/e2e/spec.cy.js:183:11)",
+          "duration": 5425,
+          "state": "failed",
+          "title": [
+            "Buildout Qtify v2",
+            "Cards Tests",
+            "should match the count of top, and new album cards with their respective API responses"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "failed"
+            }
+          ],
+          "displayError": "AssertionError: Timed out retrying after 4000ms: Expected to find content: '/show all/i' but never did.\n    at checkAlbumVisibilityAndToggleShowAll (webpack://qtify/./cypress/e2e/spec.cy.js:231:13)\n    at Context.eval (webpack://qtify/./cypress/e2e/spec.cy.js:246:8)",
+          "duration": 4449,
+          "state": "failed",
+          "title": [
+            "Buildout Qtify v2",
+            "Albums Section tests",
+            "should show cards for Top and New Albums and verify the 'Show All' functionality"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "failed"
+            }
+          ],
+          "displayError": "CypressError: Timed out retrying after 5000ms: `cy.wait()` timed out waiting `5000ms` for the 1st request to the route: `getTopAlbums`. No request ever occurred.\n\nhttps://on.cypress.io/wait\n    at cypressErr (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:75921:18)\n    at Object.errByPath (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:75975:10)\n    at checkForXhr (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:135212:84)\n    at <unknown> (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:135238:28)\n    at tryCatcher (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:1830:23)\n    at Promise.attempt.Promise.try (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:4338:29)\n    at whenStable (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:143614:68)\n    at <unknown> (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:143555:14)\n    at tryCatcher (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:1830:23)\n    at Promise._settlePromiseFromHandler (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:1542:31)\n    at Promise._settlePromise (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:1599:18)\n    at Promise._settlePromise0 (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:1644:10)\n    at Promise._settlePromises (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:1724:18)\n    at Promise._fulfill (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:1668:18)\n    at <unknown> (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:5473:46)\nFrom Your Spec Code:\n    at Context.eval (webpack://qtify/./cypress/e2e/spec.cy.js:260:11)",
+          "duration": 5452,
+          "state": "failed",
+          "title": [
+            "Buildout Qtify v2",
+            "Slider functionality tests",
+            "should verify if the first two albums are not visible after clicking the slider's next button 4 times"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "failed"
+            }
+          ],
+          "displayError": "CypressError: Timed out retrying after 5000ms: `cy.wait()` timed out waiting `5000ms` for the 1st request to the route: `getSongs`. No request ever occurred.\n\nhttps://on.cypress.io/wait\n    at cypressErr (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:75921:18)\n    at Object.errByPath (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:75975:10)\n    at checkForXhr (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:135212:84)\n    at <unknown> (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:135238:28)\n    at tryCatcher (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:1830:23)\n    at Promise.attempt.Promise.try (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:4338:29)\n    at whenStable (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:143614:68)\n    at <unknown> (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:143555:14)\n    at tryCatcher (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:1830:23)\n    at Promise._settlePromiseFromHandler (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:1542:31)\n    at Promise._settlePromise (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:1599:18)\n    at Promise._settlePromise0 (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:1644:10)\n    at Promise._settlePromises (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:1724:18)\n    at Promise._fulfill (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:1668:18)\n    at <unknown> (https://qtify-tau-sooty.vercel.app/__cypress/runner/cypress_runner.js:5473:46)\nFrom Your Spec Code:\n    at Context.eval (webpack://qtify/./cypress/e2e/spec.cy.js:310:11)",
+          "duration": 6121,
+          "state": "failed",
+          "title": [
+            "Buildout Qtify v2",
+            "Songs test",
+            "should match the count of song cards with their respective API responses"
+          ]
+        }
+      ],
+      "video": null
+    }
+  ],
+  "startedTestsAt": "2024-11-22T10:48:51.661Z",
+  "totalDuration": 47397,
+  "totalFailed": 11,
+  "totalPassed": 3,
+  "totalPending": 0,
+  "totalSkipped": 0,
+  "totalSuites": 7,
+  "totalTests": 14
+}
