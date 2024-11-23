@@ -54,7 +54,7 @@ const Section = ({title, apiEndpoint}) => {
         </Button>
       </Box> 
       
-      <Grid2 container spacing={2} >
+      <Grid2 container spacing={5} >
       {albumsToShow.map((album) => (
             <Grid2 item xs={6} sm={4} md={3} key={album.id}>
               <MusicCard
