@@ -17,7 +17,7 @@ import MusicCard from '../MusicCard/MusicCard';
 const Section = ({title, apiEndpoint}) => {
     const [showAll, setShowAll] = useState(false);
     const [albums, setAlbums ]=useState([]);
-    const albumsToShow = showAll ? albums : albums.slice(0, 7);
+    // const albumsToShow = showAll ? albums : albums.slice(0, 7);
     const fetchData = async () => {
         try {
           const response = await axios.get(apiEndpoint);
@@ -55,7 +55,7 @@ const Section = ({title, apiEndpoint}) => {
       </Box> 
       
       <Grid2 container spacing={5} >
-      {albumsToShow.map((album) => (
+      {albums.map((album) => (
             <Grid2 item xs={6} sm={4} md={3} key={album.id}>
               <MusicCard
                 image={album.image} 
