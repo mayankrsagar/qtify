@@ -12,6 +12,7 @@ import {
   Typography,
 } from '@mui/material';
 
+import Carousel from '../Carousel/Carousel';
 import MusicCard from '../MusicCard/MusicCard';
 
 const Section = ({title, apiEndpoint}) => {
@@ -53,7 +54,7 @@ const Section = ({title, apiEndpoint}) => {
           {showAll ? "Collapse" : "Show All"}
         </Button>
       </Box> 
-      
+      {!showAll ? <Carousel items={albums} /> :
       <Grid2 container spacing={5} >
       {albums.map((album) => (
             <Grid2 item xs={6} sm={4} md={3} key={album.id}>
@@ -64,7 +65,7 @@ const Section = ({title, apiEndpoint}) => {
               />
             </Grid2>
           ))}
-    </Grid2>
+    </Grid2> }
     </Box>
   )
 }
