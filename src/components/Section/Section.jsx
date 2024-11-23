@@ -53,7 +53,7 @@ const Section = ({title, apiEndpoint}) => {
           {showAll ? "Collapse" : "Show All"}
         </Button>
       </Box> 
-      <Box sx={{display:'flex', justifyContent:"center", alignItems:"center"}}>
+      
       <Grid2 container spacing={2} >
       {albumsToShow.map((album) => (
             <Grid2 item xs={6} sm={4} md={3} key={album.id}>
@@ -65,7 +65,6 @@ const Section = ({title, apiEndpoint}) => {
             </Grid2>
           ))}
     </Grid2>
-    </Box>
     </Box>
   )
 }
