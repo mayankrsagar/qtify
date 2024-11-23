@@ -15,7 +15,7 @@ import {
 import MusicCard from '../MusicCard/MusicCard';
 
 const Section = ({title, apiEndpoint}) => {
-    const [collapsed, setCollapsed]=useState(true)
+    const [showAll, setShowAll] = useState(false);
     const [albums, setAlbums ]=useState([]);
     const fetchData=async()=>{
         const response=await axios.get(apiEndpoint);
@@ -42,13 +42,13 @@ const Section = ({title, apiEndpoint}) => {
         <Button
           variant="text"
           sx={{ fontSize: "0.9rem", textTransform: "none" }}
-          onClick={() => setCollapsed(!collapsed)}
+          onClick={() => setShowAll((prev) => !prev)}
         >
-          {collapsed ? "Expand" : "Collapse"}
+          {showAll ? "Collapse" : "Show All"}
         </Button>
       </Box>
-      {!collapsed && 
-      <Grid2 container spacing={3}>
+      {showAll && 
+      <Grid2 container spacing={2}>
       {albums.map((album) => (
             <Grid2 item xs={6} sm={4} md={3} key={album.id}>
               <MusicCard
