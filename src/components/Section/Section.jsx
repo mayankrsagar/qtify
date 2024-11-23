@@ -15,7 +15,7 @@ import {
 import MusicCard from '../MusicCard/MusicCard';
 
 const Section = ({title, apiEndpoint}) => {
-    const [collapsed, setCollapsed]=useState(false)
+    const [collapsed, setCollapsed]=useState(true)
     const [albums, setAlbums ]=useState([]);
     const fetchData=async()=>{
         const response=await axios.get(apiEndpoint);
