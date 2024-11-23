@@ -21,9 +21,10 @@ import LeftButton from '../../components/CarouselButton/LeftButton';
 import RightButton from '../../components/CarouselButton/RightButton';
 import MusicCard from '../../components/MusicCard/MusicCard';
 
-const Carousel = ({ items }) => {
+const Carousel = ({ items}) => {
   // Ref for Swiper instance
   const swiperRef = useRef(null);
+  
 
   useEffect(() => {
     if (swiperRef.current) {
@@ -32,6 +33,10 @@ const Carousel = ({ items }) => {
       swiperRef.current.swiper.navigation.update();
     }
   }, [items]);
+  // useEffect(()=>{
+  //   console.log(items)
+  //   console.log(genre)
+  // },[])
 
   return (
     <Box sx={{ position: 'relative', padding: '20px 0' }}>
@@ -43,9 +48,26 @@ const Carousel = ({ items }) => {
         ref={swiperRef}
         modules={[Navigation]}
         navigation={{ prevEl: '.custom-prev', nextEl: '.custom-next' }}
-        
-        spaceBetween={20} // Adjust as per your design
-        slidesPerView={7} // Adjust for responsiveness
+        breakpoints={{
+          0:{
+              slidesPerView: 4
+          },
+          768: {
+            slidesPerView: 5, 
+          },
+          
+          1024: {
+            slidesPerView: 7, 
+         
+          },
+          
+          // 1280: {
+          //   slidesPerView: 7,
+            
+          // },
+        }}
+        spaceBetween={20} 
+        slidesPerView={7}
       > <LeftButton />
         {items.map((item) => (
           <SwiperSlide key={item.id}>
@@ -58,7 +80,13 @@ const Carousel = ({ items }) => {
               <MusicCard
                 image={item.image}
                 albumName={item.title}
-                follows={`${item.follows} Followers`}
+                chipContent={
+                  item.follows 
+                    ? `${item.follows} followers` 
+                    : item.likes 
+                    ? `${item.likes} likes` 
+                    : "None"
+                }
               />
             </Stack>
           </SwiperSlide>

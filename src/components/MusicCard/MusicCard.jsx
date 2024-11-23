@@ -9,14 +9,14 @@ import CardActionArea from '@mui/material/CardActionArea';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 
-export default function MusicCard({ image, albumName, follows }) {
+export default function MusicCard({ image, albumName, chipContent }) {
   return (
     <Card sx={{ maxWidth: 159, }}>
       <CardActionArea>
       <CardMedia
   component="img"
   image={image}
-  alt="bpraak"
+  alt={albumName}
   sx={{
     objectFit: 'cover',
     width: '100%',
@@ -37,7 +37,7 @@ export default function MusicCard({ image, albumName, follows }) {
         >
           {albumName}
         </Typography>
-        <Chip label="100 Followers"   sx={{
+        <Chip label={chipContent}   sx={{
           fontSize: '0.8rem',
           fontWeight: 'bold',
           backgroundColor: 'black',

@@ -4,6 +4,7 @@ import React from 'react';
 
 import Hero from '../../components/Hero/Hero';
 import Section from '../../components/Section/Section';
+import Songs from '../../components/Songs/Songs';
 
 const Home = () => {
   return (
@@ -16,6 +17,8 @@ const Home = () => {
         title="New Albums"
         apiEndpoint="https://qtify-backend-labs.crio.do/albums/new"
       />
+
+      <Songs />
 
     </React.Fragment>
 

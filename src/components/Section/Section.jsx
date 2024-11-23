@@ -34,7 +34,7 @@ const Section = ({title, apiEndpoint}) => {
     },[apiEndpoint])
 
   return (
-        <Box sx={{ padding: "16px 24px" }}>
+        <Box >
       <Box
         sx={{
           display: "flex",
@@ -46,13 +46,15 @@ const Section = ({title, apiEndpoint}) => {
         <Typography variant="h5" sx={{ fontWeight: "bold" }}>
           {title}
         </Typography>
+        
         <Button
           variant="text"
           sx={{ fontSize: "0.9rem", textTransform: "none" }}
           onClick={() => setShowAll((prev) => !prev)}
         >
-          {showAll ? "Collapse" : "Show All"}
+        {showAll  ? "Collapse" : "Show All"}
         </Button>
+
       </Box> 
       {!showAll ? <Carousel items={albums} /> :
       <Grid2 container spacing={5} >
@@ -61,7 +63,13 @@ const Section = ({title, apiEndpoint}) => {
               <MusicCard
                 image={album.image} 
                 albumName={album.title} 
-                follows={`${album.follows} Followers`} 
+                chipContent={
+                  album.follows 
+                    ? `${album.follows} followers` 
+                    : album.likes 
+                    ? `${album.likes} likes` 
+                    : "None"
+                }
               />
             </Grid2>
           ))}
