@@ -54,7 +54,7 @@ const Section = ({title, apiEndpoint}) => {
         </Button>
       </Box> 
       <Box sx={{display:'flex', justifyContent:"center", alignItems:"center"}}>
-      <Grid2 container spacing={5} >
+      <Grid2 container spacing={2} >
       {albumsToShow.map((album) => (
             <Grid2 item xs={6} sm={4} md={3} key={album.id}>
               <MusicCard
