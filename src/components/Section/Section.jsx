@@ -17,13 +17,19 @@ import MusicCard from '../MusicCard/MusicCard';
 const Section = ({title, apiEndpoint}) => {
     const [showAll, setShowAll] = useState(false);
     const [albums, setAlbums ]=useState([]);
-    const fetchData=async()=>{
-        const response=await axios.get(apiEndpoint);
-        setAlbums(response.data);
-    }
+    const albumsToShow = showAll ? albums : albums.slice(0, 7);
+    const fetchData = async () => {
+        try {
+          const response = await axios.get(apiEndpoint);
+          setAlbums(response.data);
+        } catch (error) {
+          console.error("Error fetching data", error);
+        }
+      };
 
     useEffect(()=>{
         fetchData();
+        
     },[apiEndpoint])
 
   return (
@@ -46,10 +52,10 @@ const Section = ({title, apiEndpoint}) => {
         >
           {showAll ? "Collapse" : "Show All"}
         </Button>
-      </Box>
-      {showAll && 
-      <Grid2 container spacing={2}>
-      {albums.map((album) => (
+      </Box> 
+      <Box sx={{display:'flex', justifyContent:"center", alignItems:"center"}}>
+      <Grid2 container spacing={5} >
+      {albumsToShow.map((album) => (
             <Grid2 item xs={6} sm={4} md={3} key={album.id}>
               <MusicCard
                 image={album.image} 
@@ -58,7 +64,8 @@ const Section = ({title, apiEndpoint}) => {
               />
             </Grid2>
           ))}
-    </Grid2>}
+    </Grid2>
+    </Box>
     </Box>
   )
 }
